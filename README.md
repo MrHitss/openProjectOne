@@ -24,9 +24,10 @@ MAIL_USERNAME=username
 MAIL_PASSWORD=password
 ```
 
-3. Run the migrations:
+3. Run the migrations and link the storage:
 ```php
- php artisan migrate
+php artisan migrate
+php artisan storage:link
 ```
 
 4. Register a User:
