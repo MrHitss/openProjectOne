@@ -7,13 +7,21 @@
 composer install
 ```
 
-2. Update .env file with the database name and debricked username and password
+2. Update .env file with below details
 ```php
+APP_URL=http://127.0.0.1:8000
+
 DB_USERNAME=root
 DB_PASSWORD=password
 
 DEBRICKED_USERNAME="username"
 DEBRICKED_PASSWORD="password"
+
+MAIL_MAILER=smtp
+MAIL_HOST=sandbox.smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=username
+MAIL_PASSWORD=password
 ```
 
 3. Run the migrations:
